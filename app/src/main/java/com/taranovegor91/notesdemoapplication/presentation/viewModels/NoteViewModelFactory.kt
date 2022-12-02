@@ -1,10 +1,9 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.presentation.viewModels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-
-
+import com.taranovegor91.notesdemoapplication.*
 
 
 class NoteViewModelFactory(private val context: Context) : ViewModelProvider.Factory {

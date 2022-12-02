@@ -1,4 +1,4 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.presentation
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -12,13 +12,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.github.javafaker.Faker
+import com.taranovegor91.notesdemoapplication.BackPressedForFragments
+import com.taranovegor91.notesdemoapplication.Note
+import com.taranovegor91.notesdemoapplication.R
+import com.taranovegor91.notesdemoapplication.databinding.FragmentNoteDetailseBinding
+import com.taranovegor91.notesdemoapplication.mainDb
 
 
-import com.taranovegor91.mypresentationapp.utils.BackPressedForFragments
 import java.util.*
 
 
-class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse) ,BackPressedForFragments{
+class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse) , BackPressedForFragments {
     var countNumber = 0
     var mutableListTextStack = mutableListOf<String>()
     var countStackCurent = 0
@@ -226,7 +230,7 @@ class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse) ,BackPres
         alertDialog.setMessage("getString(R.string.cancel_editing_note_question)")
 
         // задаем иконку
-        alertDialog.setIcon(com.taranovegor91.mypresentationapp.R.drawable.krasn_krest)
+        alertDialog.setIcon(androidx.appcompat.R.drawable.abc_ic_clear_material)
 
         // Обработчик на нажатие OK
         alertDialog.setButton("getString(R.string.Ok)") { dialog, which -> // Код который выполнится после закрытия окна

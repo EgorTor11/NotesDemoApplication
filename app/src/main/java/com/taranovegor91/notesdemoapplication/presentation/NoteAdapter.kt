@@ -1,4 +1,4 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.presentation
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.taranovegor91.notesdemoapplication.Note
+import com.taranovegor91.notesdemoapplication.R
+import com.taranovegor91.notesdemoapplication.databinding.ItemNoteBinding
 
 
 class NoteAdapter(

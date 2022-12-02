@@ -1,7 +1,8 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.presentation.viewModels
 
 import androidx.lifecycle.ViewModel
 import com.github.javafaker.Faker
+import com.taranovegor91.notesdemoapplication.*
 
 
 class NoteViewModel(

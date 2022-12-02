@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".presentation.DetailseNoteFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_back_black" />
+
+                <ImageView
+                    android:id="@+id/imForward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_forvard" />
+
+                <ImageView
+                    android:id="@+id/imAddRick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_rick_cherny" />
+
+                <ImageView
+                    android:id="@+id/imAddJoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_chuck" />
+
+                <ImageView
+                    android:id="@+id/imAddNumMikrik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_list_mikrik" />
+                <ImageView
+                    android:id="@+id/imAddNumder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_number" />
+
+                <ImageView
+                    android:id="@+id/imAddGalocka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_ok" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_radius"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:background="@drawable/im_add_img_but"
+                    android:gravity="left|top"
+                    android:hint="enter the note"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#959292"
+                    tools:layout_editor_absoluteY="51dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:layout_editor_absoluteY="662dp">
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/krasn_krest" />
+
+            <ImageView
+                android:id="@+id/imLastik"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sterka" />
+
+            <ImageView
+                android:id="@+id/imMikrik"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_microfon" />
+
+            <ImageView
+                android:id="@+id/imShare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/btnOk"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/galocka" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.presentation
 
 import android.os.Bundle
 import android.view.View
@@ -9,11 +9,12 @@ import androidx.lifecycle.asLiveData
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
-
+import com.taranovegor91.notesdemoapplication.*
+import com.taranovegor91.notesdemoapplication.databinding.FragmentRootBinding
 
 
 class RootFragment:Fragment(R.layout.fragment_root) {
-    private lateinit var binding: FragmentRootBindin
+    private lateinit var binding: FragmentRootBinding
     lateinit var vm: NoteViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
