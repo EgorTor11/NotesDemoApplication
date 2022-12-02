@@ -1,5 +1,7 @@
-package com.taranovegor91.notesdemoapplication
-import com.taranovegor91.mypresentationapp.domain.models.Note
+package com.taranovegor91.notesdemoapplication.domain.interfaces.repository
+
+
+import com.taranovegor91.notesdemoapplication.domain.models.Note
 
 
 interface Repository {

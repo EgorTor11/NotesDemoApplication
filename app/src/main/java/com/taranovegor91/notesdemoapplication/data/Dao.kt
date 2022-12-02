@@ -1,8 +1,8 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.data
 
 import androidx.room.*
 import androidx.room.Dao
-import com.taranovegor91.mypresentationapp.domain.models.Note
+import com.taranovegor91.notesdemoapplication.domain.models.Note
 
 
 import kotlinx.coroutines.flow.Flow

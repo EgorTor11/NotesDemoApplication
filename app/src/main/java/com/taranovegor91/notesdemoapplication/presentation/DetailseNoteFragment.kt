@@ -12,17 +12,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.github.javafaker.Faker
-import com.taranovegor91.notesdemoapplication.BackPressedForFragments
-import com.taranovegor91.notesdemoapplication.Note
 import com.taranovegor91.notesdemoapplication.R
+import com.taranovegor91.notesdemoapplication.app.mainDb
 import com.taranovegor91.notesdemoapplication.databinding.FragmentNoteDetailseBinding
-import com.taranovegor91.notesdemoapplication.mainDb
+import com.taranovegor91.notesdemoapplication.domain.models.Note
 
 
 import java.util.*
 
 
-class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse) , BackPressedForFragments {
+class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse)  {
     var countNumber = 0
     var mutableListTextStack = mutableListOf<String>()
     var countStackCurent = 0
@@ -224,26 +223,24 @@ class DetailseNoteFragment : Fragment(R.layout.fragment_note_detailse) , BackPre
         val alertDialog: AlertDialog = AlertDialog.Builder(requireContext()).create()
 
         // Указываем Title
-        alertDialog.setTitle("getString(R.string.cancel_editing)")
+        alertDialog.setTitle(getString(R.string.undo_note_editing))
 
         // Указываем текст сообщение
-        alertDialog.setMessage("getString(R.string.cancel_editing_note_question)")
+        alertDialog.setMessage(getString(R.string.want_to_undo_editing_note))
 
         // задаем иконку
         alertDialog.setIcon(androidx.appcompat.R.drawable.abc_ic_clear_material)
 
         // Обработчик на нажатие OK
-        alertDialog.setButton("getString(R.string.Ok)") { dialog, which -> // Код который выполнится после закрытия окна
+        alertDialog.setButton(getString(R.string.ok)) { dialog, which -> // Код который выполнится после закрытия окна
             findNavController().popBackStack()
         }
-        alertDialog.setButton2("getString(R.string.No)") { dialog, which -> // Код который выполнится после закрытия окна
+        alertDialog.setButton2(getString(R.string.no)) { dialog, which -> // Код который выполнится после закрытия окна
 
         }
         // показываем Alert
         alertDialog.show()
     }
 
-    override fun onBackPressed() {
-        buildAlertDialog()
-    }
+
 }

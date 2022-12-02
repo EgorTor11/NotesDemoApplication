@@ -3,7 +3,12 @@ package com.taranovegor91.notesdemoapplication.presentation.viewModels
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.taranovegor91.notesdemoapplication.*
+import com.taranovegor91.notesdemoapplication.data.repository.RepositoryClass
+import com.taranovegor91.notesdemoapplication.domain.useCases.DeleteNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.InsertNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.SendNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.UpdateNoteUseCase
+import com.taranovegor91.notesdemoapplication.utils.SendNoteClass
 
 
 class NoteViewModelFactory(private val context: Context) : ViewModelProvider.Factory {

@@ -10,7 +10,11 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.taranovegor91.notesdemoapplication.*
+import com.taranovegor91.notesdemoapplication.app.mainDb
 import com.taranovegor91.notesdemoapplication.databinding.FragmentRootBinding
+import com.taranovegor91.notesdemoapplication.domain.models.Note
+import com.taranovegor91.notesdemoapplication.presentation.viewModels.NoteViewModel
+import com.taranovegor91.notesdemoapplication.presentation.viewModels.NoteViewModelFactory
 
 
 class RootFragment:Fragment(R.layout.fragment_root) {

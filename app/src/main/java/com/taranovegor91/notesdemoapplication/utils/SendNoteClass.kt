@@ -1,8 +1,9 @@
-package com.taranovegor91.notesdemoapplication
-
+package com.taranovegor91.notesdemoapplication.utils
 
 import android.content.Context
 import android.content.Intent
+import com.taranovegor91.notesdemoapplication.SendNote
+import com.taranovegor91.notesdemoapplication.domain.models.Note
 
 
 class SendNoteClass(private val context: Context): SendNote {

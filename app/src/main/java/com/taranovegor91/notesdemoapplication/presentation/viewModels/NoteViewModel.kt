@@ -2,7 +2,11 @@ package com.taranovegor91.notesdemoapplication.presentation.viewModels
 
 import androidx.lifecycle.ViewModel
 import com.github.javafaker.Faker
-import com.taranovegor91.notesdemoapplication.*
+import com.taranovegor91.notesdemoapplication.domain.models.Note
+import com.taranovegor91.notesdemoapplication.domain.useCases.DeleteNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.InsertNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.SendNoteUseCase
+import com.taranovegor91.notesdemoapplication.domain.useCases.UpdateNoteUseCase
 
 
 class NoteViewModel(

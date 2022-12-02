@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">MyPresentationApp</string>
+    <string name="app_name">DemoApp</string>
+    <string name="undo_note_editing">undo note editing</string>
+    <string name="want_to_undo_editing_note">want to undo editing a note?</string>
+    <string name="ok">Ok</string>
+    <string name="no">No</string>
 </resources>

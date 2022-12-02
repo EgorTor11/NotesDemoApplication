@@ -1,7 +1,9 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.data.repository
 
-import com.taranovegor91.mypresentationapp.domain.models.Note
-import com.taranovegor91.mypresentationapp.domain.interfaces.repository.Repository
+import com.taranovegor91.notesdemoapplication.app.mainDb
+import com.taranovegor91.notesdemoapplication.domain.interfaces.repository.Repository
+import com.taranovegor91.notesdemoapplication.domain.models.Note
+
 
 class RepositoryClass : Repository {
     override fun insertNote(note: Note) {

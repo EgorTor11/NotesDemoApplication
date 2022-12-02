@@ -1,4 +1,4 @@
-package com.taranovegor91.notesdemoapplication
+package com.taranovegor91.notesdemoapplication.domain.models
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
