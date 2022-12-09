@@ -1,33 +1,39 @@
 package com.taranovegor91.notesdemoapplication.presentation.viewModels
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.github.javafaker.Faker
 import com.taranovegor91.notesdemoapplication.domain.models.Note
 import com.taranovegor91.notesdemoapplication.domain.useCases.DeleteNoteUseCase
 import com.taranovegor91.notesdemoapplication.domain.useCases.InsertNoteUseCase
-import com.taranovegor91.notesdemoapplication.domain.useCases.SendNoteUseCase
 import com.taranovegor91.notesdemoapplication.domain.useCases.UpdateNoteUseCase
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
-class NoteViewModel(
+class RootViewModel(
     private val insertNoteUseCase: InsertNoteUseCase,
     private val deleteNoteUseCase: DeleteNoteUseCase,
     private val updateNoteUseCase: UpdateNoteUseCase,
-    private val sendNoteUseCase: SendNoteUseCase,
 ) : ViewModel() {
+
     fun insertNote() {
-        insertNoteUseCase.execute(Note(null, Faker.instance().rickAndMorty().quote(), false))
+        viewModelScope.launch(Dispatchers.IO) {
+            insertNoteUseCase.execute(Note(null,
+                Faker.instance().rickAndMorty().quote(),
+                false))
+        }
     }
 
     fun deleteNote(note: Note) {
-        deleteNoteUseCase.execute(note)
+        viewModelScope.launch(Dispatchers.IO) {
+            deleteNoteUseCase.execute(note)
+        }
     }
 
     fun updateNote(note: Note) {
-        updateNoteUseCase.execute(note)
-    }
-
-    fun sendNote(note: Note) {
-        sendNoteUseCase.execute(note)
+        viewModelScope.launch(Dispatchers.IO) {
+            updateNoteUseCase.execute(note)
+        }
     }
 }

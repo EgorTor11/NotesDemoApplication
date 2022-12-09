@@ -10,6 +10,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable-anydpi/ic_number.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable-anydpi/ic_ok.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable-anydpi/ic_share.xml" value="0.192" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable-v24/im_button_fokus.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable/card_radius.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable/card_radius_from_link.xml" value="0.192" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable/im_add_img_but.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/drawable/item_corner.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/layout/fragment_note_details.xml" value="0.15364583333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/layout/fragment_note_detailse.xml" value="0.4" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/layout/fragment_root.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/NotesDemoApplication/app/src/main/res/layout/item_note.xml" value="0.25416666666666665" />

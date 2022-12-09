@@ -13,22 +13,23 @@ import com.taranovegor91.notesdemoapplication.*
 import com.taranovegor91.notesdemoapplication.app.mainDb
 import com.taranovegor91.notesdemoapplication.databinding.FragmentRootBinding
 import com.taranovegor91.notesdemoapplication.domain.models.Note
-import com.taranovegor91.notesdemoapplication.presentation.viewModels.NoteViewModel
-import com.taranovegor91.notesdemoapplication.presentation.viewModels.NoteViewModelFactory
+import com.taranovegor91.notesdemoapplication.presentation.viewModels.RootViewModel
+import com.taranovegor91.notesdemoapplication.presentation.viewModels.RootViewModelFactory
+import com.taranovegor91.notesdemoapplication.utils.shareText
 
 
 class RootFragment:Fragment(R.layout.fragment_root) {
     private lateinit var binding: FragmentRootBinding
-    lateinit var vm: NoteViewModel
+    lateinit var vm: RootViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentRootBinding.bind(view)
-        vm = ViewModelProvider(this, NoteViewModelFactory(requireActivity())).get(
-            NoteViewModel::class.java)
+        vm = ViewModelProvider(this, RootViewModelFactory(requireActivity())).get(
+            RootViewModel::class.java)
         val adapter = NoteAdapter(object : NoteAdapter.Listener {
             override fun onTextClick(note: Note) {
                 findNavController().navigate(R.id.action_rootFragment_to_detailseNoteFragment,
-                    bundleOf(DetailseNoteFragment.KEY to note))
+                    bundleOf(DetailsNoteFragment.KEY to note))
             }
             override fun onDeleteClick(note: Note) {
                 vm.deleteNote(note)
@@ -38,7 +39,8 @@ class RootFragment:Fragment(R.layout.fragment_root) {
             }
 
             override fun onShareClick(note: Note) {
-                vm.sendNote(note)
+              //  vm.sendNote(note)
+                requireContext().shareText(note.message)
             }
         })
         (binding.rcNote.itemAnimator as? DefaultItemAnimator)?.supportsChangeAnimations = false

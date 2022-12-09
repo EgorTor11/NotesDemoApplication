@@ -7,7 +7,7 @@ import com.taranovegor91.notesdemoapplication.domain.models.Note
 
 class RepositoryClass : Repository {
     override fun insertNote(note: Note) {
-        Thread { mainDb.getDao().insertItem(note) }.start()
+        mainDb.getDao().insertItem(note)
     }
 
     override fun getNote(): Note {
@@ -15,10 +15,10 @@ class RepositoryClass : Repository {
     }
 
     override fun deleteNote(note: Note) {
-        Thread { mainDb.getDao().deleteItem(note) }.start()
+         mainDb.getDao().deleteItem(note)
     }
 
     override fun apdateNote(note: Note) {
-        Thread { mainDb.getDao().updateItem(note) }.start()
+         mainDb.getDao().updateItem(note)
     }
 }

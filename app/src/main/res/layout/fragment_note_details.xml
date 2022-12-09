@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".presentation.DetailseNoteFragment">
+    tools:context=".presentation.DetailsNoteFragment">
 
 
     <LinearLayout
@@ -51,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="10dp"
+                    android:visibility="invisible"
                     app:srcCompat="@drawable/ic_back_black" />
 
                 <ImageView
@@ -59,6 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="10dp"
+                    android:visibility="invisible"
                     app:srcCompat="@drawable/ic_forvard" />
 
                 <ImageView

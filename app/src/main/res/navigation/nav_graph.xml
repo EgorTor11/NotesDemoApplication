@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailseNoteFragment"
-        android:name="com.taranovegor91.notesdemoapplication.presentation.DetailseNoteFragment"
+        android:name="com.taranovegor91.notesdemoapplication.presentation.DetailsNoteFragment"
         android:label="fragment_note_detailse"
-        tools:layout="@layout/fragment_note_detailse" />
+        tools:layout="@layout/fragment_note_details" />
 </navigation>
